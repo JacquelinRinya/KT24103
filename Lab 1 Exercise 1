@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int const SIZE = 5; 
+	int i = 0, data[SIZE] = { 0,1,2,3,4 };
+	int* p = &data[0];
+	
+	for (int j = 0; j < SIZE; j++)
+	{
+		cout << "Data " << "[" << j << "] = " << data[j] << "\n";
+	}
+
+	cout << "---------------------------" << endl;
+
+	for (int j = 0; j < SIZE; j++)
+	{
+		cout << "Data " << "[" << j << "] = " << *p++ << "\n";
+	}
+}
+
+	/*while (i < SIZE)
+	{
+		cout << "Data " << "[" << i << "] = " << *(p + i) << "\n";
+		i++;
+	}
+	cout <<"---------------------------"<< endl;
+	while (i < SIZE)
+	{
+		cout << "Data " << "[" << i << "] = " << *(p++) << "\n";
+		i++;
+	}*/
+
