@@ -49,7 +49,7 @@ class Queue{
 				queueArr[front] = 0;
 				front = (front + 1) % 5;
 			}
-			cout << "The front of the queue: " << del_value << " is removed" << endl;
+			cout << "The front queue: " << del_value << " is removed" << endl;
 		}
 		
 		bool isEmpty(){
@@ -72,7 +72,7 @@ class Queue{
 				cout << "EMPTY!";
 			}
 			else{
-				cout << "\nThe value inside the queue are: ";
+				cout << "\nThe value queue are: ";
 				for(int i = 0; i < 5; i++){
 					cout << queueArr[i] << " ";}	
 			}
